@@ -1,0 +1,53 @@
+algorithm Problem1 Solution1
+
+var 
+
+integer S,C,i,j
+array T1 ,T2
+
+Begin
+
+S:= 0
+for i from 0 to length T1[i]do 
+for j from 0 to length T2[j] do 
+if (T1[i]=T2[j])do
+S:= S+T1[i] ;
+C := T1[i] ;
+
+end if
+
+write ("the distinct elemnets are",C) ;
+write ("the sum is:" S)
+end
+
+algorithm Problem1 Solution2 
+
+var 
+htab1,htab2:HASH_TABLE<integer,integer> 
+
+begin
+var
+integer S,count,i,j
+array T1 ,T2
+
+htab1.insert(i,T1[i])
+htab2.insert(j,T2[j])
+write(htab1)
+write(htab2)
+
+s:= 0
+count:=0
+for i from 0 to length T1[i]do 
+for j from 0 to length T2[j] do 
+if (T1[i]=T2[j]) then
+S := S+T1[i] ;
+count:= T1[i];
+end if
+
+write ("the distinct elemnets are",count) ;
+write ("the sum is:" S)
+end
+
+
+
+
